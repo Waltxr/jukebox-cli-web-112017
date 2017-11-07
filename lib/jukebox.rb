@@ -51,13 +51,13 @@ def run(songs)
   until user_response == "exit" do
     if user_response == "list"
       list(songs)
-      return
+      user_response = gets.chomp
     elsif user_response == "play"
       play(songs)
-      return
+      user_response = gets.chomp
     elsif user_response == "help"
       help
-      return
+      user_response = gets.chomp
     else
       user_input = gets.chomp
       return
