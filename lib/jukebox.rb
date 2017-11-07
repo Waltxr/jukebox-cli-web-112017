@@ -34,7 +34,6 @@ def play(songs)
       puts "playing #{song}"
     else
       puts "Invalid input, please try again"
-      song_name = gets.chomp
     end
   end
 end
