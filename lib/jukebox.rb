@@ -28,14 +28,12 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_name = gets.chomp
 
-  list(songs).each do |song|
-
-    if song.include?(song_name)
-      puts "playing #{song}"
+    if song_name -1 <= songs.length
+      puts "playing #{songs[song_name-1]}"
     else
       puts "Invalid input, please try again"
     end
-  end
+
 end
 
 def exit_jukebox
