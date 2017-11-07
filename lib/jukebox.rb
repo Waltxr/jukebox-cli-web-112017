@@ -31,7 +31,7 @@ def play(songs)
   list(songs).each do |song|
 
     if song.include?(song_name)
-      puts "playing #{song_name}"
+      puts "playing #{song}"
     else
       puts "Invalid input, please try again"
       song_name = gets.chomp
